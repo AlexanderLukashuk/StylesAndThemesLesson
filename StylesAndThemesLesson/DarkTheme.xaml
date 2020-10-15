@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:StylesAndThemesLesson">
+    <SolidColorBrush x:Key="buttonColor" Color="MediumPurple" />
+    <Style TargetType="Button" >
+        <Style.Setters>
+            <Setter Property="Background" Value="{StaticResource buttonColor}" />
+            <Setter Property="Width" Value="200" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Foreground" Value="PapayaWhip" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style.Setters>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="DeepPink" />
+                <Setter Property="FontSize" Value="25" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="TextBox">
+        <Style.Setters>
+            <Setter Property="Background" Value="{StaticResource buttonColor}" />
+            <Setter Property="Width" Value="200" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Foreground" Value="PapayaWhip" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style.Setters>
+    </Style>
+</ResourceDictionary>
